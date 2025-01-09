@@ -1,19 +1,22 @@
-const breakfastDiv = document.getElementById("breakfast")
-breakfastDiv.addEventListener('click', () => breakfastClicked())
+let breakfastDiv = document.getElementById("breakfast")
 
-const LunchDiv = document.getElementById("lunch")
-LunchDiv.addEventListener('click', () => lunchClicked())
+
+let LunchDiv = document.getElementById("lunch")
+
 
 function breakfastClicked(){
-    const breakfastDiv = document.getElementById("breakfastfoods")
+    let breakfastDiv = document.getElementById("breakfastFoods")
     breakfastDiv.style.display = 'flex'
-    const lunchDiv = document.getElementById("lunchFoods")
+    let lunchDiv = document.getElementById("lunchFoods")
     lunchDiv.style.display = 'none'
 }
 
 function lunchClicked(){
-    const breakfastDiv = document.getElementById("breakfastFoods")
+    let breakfastDiv = document.getElementById("breakfastFoods")
     breakfastDiv.style.display = 'none'
-    const lunchDiv = document.getElementById("lunchFoods")
+    let lunchDiv = document.getElementById("lunchFoods")
     lunchDiv.style.display = 'flex'
 }
+
+breakfastDiv.addEventListener('click', () => breakfastClicked())
+LunchDiv.addEventListener('click', () => lunchClicked())
