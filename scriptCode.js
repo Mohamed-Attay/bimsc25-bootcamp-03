@@ -12,7 +12,7 @@ function breakfastClicked(){
 }
 
 function lunchClicked(){
-    const breakfastDiv = Document.getElementById("breakfastFoods")
+    const breakfastDiv = document.getElementById("breakfastFoods")
     breakfastDiv.style.display = 'none'
     const lunchDiv = document.getElementById("lunchFoods")
     lunchDiv.style.display = 'flex'
